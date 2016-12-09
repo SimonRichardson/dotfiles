@@ -39,25 +39,14 @@ ZSH_THEME="agnoster" # "eastwood"
 # much faster.
 # DISABLE_UNTRACKED_FILES_DIRTY="true"
 
-# Which plugins would you like to load? (plugins can be found in ~/.oh-my-zsh/plugins/*)
-# Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
-# Example format: plugins=(rails git textmate ruby lighthouse)
-plugins=(git git-flow)
-
 source $ZSH/oh-my-zsh.sh
 
 # Customize to your needs...
-export PATH=$PATH:/Users/mio/.nvm/v0.10.4/bin:/usr/local/bin:/opt/local/bin:/opt/local/sbin:/Users/mio/bin:/Users/mio/android-sdk/tools:/Users/mio/android-sdk/platform-tools:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/opt/X11/bin:/usr/local/munki
-
-### Added by the Heroku Toolbelt
-export PATH="/usr/local/heroku/bin:$PATH"
-
-# Add algolia search client
-export PATH="/Users/mio/src/algoliasearch-client-cmd:$PATH"
-
-# added by travis gem
-[ -f /Users/mio/.travis/travis.sh ] && source /Users/mio/.travis/travis.sh
+export PATH=$PATH:/usr/local/bin:/opt/local/bin:/opt/local/sbin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/opt/X11/bin
 
 [[ -s "$HOME/.rvm/scripts/rvm" ]] && . "$HOME/.rvm/scripts/rvm"
 
 export PATH="$PATH:$HOME/.rvm/bin" # Add RVM to PATH for scripting
+
+export NVM_DIR="/home/simon/.nvm"
+[ -s "$NVM_DIR/nvm.sh" ] && . "$NVM_DIR/nvm.sh"  # This loads nvm

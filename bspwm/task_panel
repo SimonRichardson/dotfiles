@@ -1,8 +1,0 @@
-#!/bin/bash
-
-while :; do
-  task +TODAY next
-  task project:scratch next
-  sleep 5
-  clear
-done

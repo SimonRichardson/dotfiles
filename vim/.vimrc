@@ -1,8 +1,36 @@
 call pathogen#infect()
 
-syntax enable
+nmap :Wq :wq
+nmap :wQ :wq
+nmap :WQ :wq
+nmap :Q  :q
+nmap :W  :w
+nmap :qw :wq
 
-set backspace=indent,eol,start
+syntax enable
+syntax on
+set background=dark
+
+set pastetoggle=<F2>
+
+set ruler
+set number
+set scrolloff=5
+set cmdheight=1
+set ttyfast
+set noerrorbells
+set visualbell
+set title
+
+set autoindentcd 
+set smartindent
+set copyindent
+set nowrap
+
+set nobackup
+set noswapfile
+
+set list
 
 :if $VIM_CRONTAB == "true"
 :set nobackup

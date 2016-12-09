@@ -22,7 +22,7 @@ set noerrorbells
 set visualbell
 set title
 
-set autoindentcd 
+set autoindent 
 set smartindent
 set copyindent
 set nowrap

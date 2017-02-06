@@ -38,3 +38,7 @@ function vt {
   git log --oneline ${PREVIOUS_TAG}..HEAD
   git log --oneline ${PREVIOUS_TAG}..HEAD | cut -d" " -f2- | pbcopy
 }
+
+function g_token {
+  export GITHUB_TOKEN=$(cat ${HOME}/.netrc | awk '{ print $NF }')
+}

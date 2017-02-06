@@ -39,6 +39,8 @@ ZSH_THEME="agnoster" # "eastwood"
 # much faster.
 # DISABLE_UNTRACKED_FILES_DIRTY="true"
 
+plugins=(zshmarks)
+
 source $ZSH/oh-my-zsh.sh
 
 # Customize to your needs...
@@ -50,3 +52,8 @@ export PATH="$PATH:$HOME/.rvm/bin" # Add RVM to PATH for scripting
 
 export NVM_DIR="/home/simon/.nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && . "$NVM_DIR/nvm.sh"  # This loads nvm
+
+# added by travis gem
+[ -f /home/simon/.travis/travis.sh ] && source /home/simon/.travis/travis.sh
+
+eval "$(thefuck --alias)"

@@ -19,3 +19,7 @@ mv 10-powerline-symbols.conf ~/.config/fontconfig/conf.d/
 
 # Install termite
 ./termite/install.sh
+
+
+# Install thefuck
+./thefuck/install.sh

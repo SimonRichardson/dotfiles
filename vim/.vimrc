@@ -30,8 +30,6 @@ set nowrap
 set nobackup
 set noswapfile
 
-set list
-
 :if $VIM_CRONTAB == "true"
 :set nobackup
 :set nowritebackup
